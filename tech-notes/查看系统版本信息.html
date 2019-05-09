@@ -24,7 +24,7 @@
 <link rel="shortcut icon" href="/images/favicon.png">
 
 
-<title>标签云 - JohnToms</title>
+<title>查看系统版本信息 - JohnToms</title>
 
 <meta name="keywords" content>
 
@@ -100,8 +100,26 @@
 
             <div class="page-title">
     <ul>
-        <li><a href="/" data-name="首页" title="Back Home">首页</a></li>
-        <li><a href="/archives" data-name="归档" title="归档">归档</a></li>
+        <li><a href="/">最近</a></li>
+        
+            
+                <li class="active">
+                    <a href="/categories/tech-notes" data-name="技术">技术</a>
+                </li>
+            
+                <li class>
+                    <a href="/categories/life" data-name="生活">生活</a>
+                </li>
+            
+                <li class>
+                    <a href="/categories/poems" data-name="诗歌">诗歌</a>
+                </li>
+            
+                <li class>
+                    <a href="/categories/others" data-name="其他">其他</a>
+                </li>
+            
+        
         <li class="page-search">
     <form id="search" class="search-form">
         <input type="text" readonly="readonly" id="local-search-input-tip" placeholder="读物检索~">
@@ -114,35 +132,55 @@
 <div class="main-inner">
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
         <div class="post-header">
-            <h3 class="post-title">总的来说，本站目前涉及6个领域 😄️</h3>
+            <div class="post-author clearfix">
+                <a class="avatar fleft" href="https://www.bestzzzc.cn" target="_blank">
+                    <img width="48" src="/images/favicon.png" alt="avatar">
+                </a>
+                <p><span class="label">作者</span>
+                    <a href="https://bestzzzc.cn" target="_blank">JohnToms</a>
+                    <span title="最后编辑于&nbsp;2019-05-09">2019-05-09</span>
+                </p>
+                <p>怀着一颗勇敢的心</p>
+            </div>
+            <h2 class="post-title">查看系统版本信息</h2>
+            <div class="post-meta">
+                本文共计925个字 |
+                您是第&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
+            </div>
         </div>
-        <p><img src="/images/tags-bg.png" alt="tags-bg"></p>
-        <div class="post-content markdown-body" itemprop="articleBody">
-            <ul class="tag-list">
-                
-                <li><a href="/tags/Linux/">Linux(1)</a></li>
-                
-                <li><a href="/tags/Love/">Love(1)</a></li>
-                
-                <li><a href="/tags/曹植/">曹植(1)</a></li>
-                
-                <li><a href="/tags/柠檬精/">柠檬精(1)</a></li>
-                
-                <li><a href="/tags/生活/">生活(1)</a></li>
-                
-                <li><a href="/tags/诗歌/">诗歌(1)</a></li>
-                
-            </ul>
+        <div class="post-content markdown-body">
+            <h2 id="Linux-查看内核版本信息有-2-中方法"><a href="#Linux-查看内核版本信息有-2-中方法" class="headerlink" title="Linux 查看内核版本信息有 2 中方法"></a>Linux 查看内核版本信息有 2 中方法</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. cat /proc/version</span></span><br><span class="line">[root@johntoms ~]<span class="comment"># cat /proc/version </span></span><br><span class="line">Linux version 3.10.0-514.21.1.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) <span class="comment">#1 SMP Thu May 25 17:04:51 UTC 2017</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. uname -a</span></span><br><span class="line">[root@johntoms ~]<span class="comment"># uname -a</span></span><br><span class="line">Linux johntoms 3.10.0-514.21.1.el7.x86_64 <span class="comment">#1 SMP Thu May 25 17:04:51 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux</span></span><br></pre></td></tr></table></figure>
+<h2 id="Linux-查看系统版本信息"><a href="#Linux-查看系统版本信息" class="headerlink" title="Linux 查看系统版本信息"></a>Linux 查看系统版本信息</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># lsb_release -a</span></span><br><span class="line"><span class="comment"># 这个命令适用于所有的Linux发行版，包括Redhat、SuSE、Debian…等发行版。</span></span><br><span class="line">[root@johntoms ~]<span class="comment"># lsb_release -a</span></span><br><span class="line">LSB Version: :core-3.1-ia32:core-3.1-noarch:graphics-3.1-ia32:graphics-3.1-noarch</span><br><span class="line">Distributor ID: CentOS</span><br><span class="line">Description: CentOS release 5.5 (Final)</span><br><span class="line">Release: 5.5</span><br><span class="line">Codename: Final</span><br><span class="line"></span><br><span class="line"><span class="comment"># cat /etc/redhat-release</span></span><br><span class="line"><span class="comment"># 只适合Redhat系的Linux</span></span><br><span class="line">[root@johntoms etc]<span class="comment"># cat /etc/redhat-release </span></span><br><span class="line">CentOS Linux release 7.3.1611 (Core) </span><br><span class="line"></span><br><span class="line"><span class="comment"># cat /etc/issue</span></span><br><span class="line"><span class="comment"># 也适用于所有的Linux发行版</span></span><br><span class="line">[root@johntoms ~]<span class="comment"># cat /etc/issue</span></span><br><span class="line">CentOS release 5.5 (Final)</span><br></pre></td></tr></table></figure>
+
         </div>
+        <div class="post-tool">
+            <a class="btn-thumbs-up" href="javascript:void(0);" data-cid="52" title="95">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i> 打赏
+            </a>
+        </div>
+        
+        <div class="post-tags">标签：
+            
+            <a href="/tags/Linux/">Linux</a>
+            
+        </div>
+        
     </article>
+    
+    <p style="text-align: center">本文代表个人观点，内容仅供参考。若有不恰当之处，望不吝赐教！</p>
+    
+    
+
     
 
 </div>
+<script src="/js/busuanzi.pure.mini.js"></script>
+
 
         </div><!-- end #main-->
     </div><!-- end #body -->
     <footer class="footer">
-    <div class="footer-inner" style="text-align: left">
+    <div class="footer-inner" style="text-align: center">
         <p>
             <a href="/about" title="关于">关于</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
             <!-- 自定义链接 -->
