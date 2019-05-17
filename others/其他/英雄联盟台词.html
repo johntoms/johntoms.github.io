@@ -429,6 +429,25 @@
     
 
     
+    
+        <div id="gitment-container"></div>
+        <link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+        <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+        <script type="text/javascript">
+            var gitment = new Gitment({
+                id: document.location.href,
+                owner: 'johntoms',
+                repo: 'https://github.com/johntoms/johntoms.github.io.git',
+                oauth: {
+                    client_id: '308e852b90a433cde0e6',
+                    client_secret: 'f813c7fce58feae83e180eb93a4c47036fff5df3',
+                }
+            });
+            gitment.render('gitment-container');
+        </script>
+        
+    
+
 
 </div>
 <script src="/js/busuanzi.pure.mini.js"></script>
