@@ -727,8 +727,8 @@ var SimpleCore = {
             $('body').addClass('night-mode');
             btn.find('i').attr('class', 'fa fa-moon-o');
             $(".cover-img").css({
-                'background': "url('http://pr8e0eh4q.bkt.clouddn.com/bestzzzc_cn/pages/pictures/cover-night.jpeg')",
-                'background-image': 'http://pr8e0eh4q.bkt.clouddn.com/bestzzzc_cn/pages/pictures/cover-night.jpeg',
+                'background': "url('https://oss-md-pictures.oss-cn-hangzhou.aliyuncs.com/bestzzzc_cn/cover-night.jpeg')",
+                'background-image': 'https://oss-md-pictures.oss-cn-hangzhou.aliyuncs.com/bestzzzc_cn/cover-night.jpeg',
                 'background-size': 'cover',
                 'background-position': 'center',
                 'background-repeat': 'no-repeat'
@@ -737,8 +737,8 @@ var SimpleCore = {
             $('body').removeClass('night-mode');
             btn.find('i').attr('class', 'fa fa-sun-o');
             $(".cover-img").css({
-                'background': "url('http://pr8e0eh4q.bkt.clouddn.com/bestzzzc_cn/pages/pictures/cover-day.jpg')",
-                'background-image': 'http://pr8e0eh4q.bkt.clouddn.com/bestzzzc_cn/pages/pictures/cover-day.jpg',
+                'background': "url('https://oss-md-pictures.oss-cn-hangzhou.aliyuncs.com/bestzzzc_cn/cover-day.jpg')",
+                'background-image': 'https://oss-md-pictures.oss-cn-hangzhou.aliyuncs.com/bestzzzc_cn/cover-day.jpg',
                 'background-size': 'cover',
                 'background-position': 'center',
                 'background-repeat': 'no-repeat'
